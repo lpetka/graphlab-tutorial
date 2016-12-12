@@ -11,7 +11,8 @@
 1. Uruchamiamy kontener
 
     ```
-    docker run -p 8888:8888 -i -t rothnic/anaconda-notebook
+    cd graphlab-tutorial
+    docker run -v $(pwd)/nb:/home/condauser/notebooks/GraphLab -p 8888:8888 -i -t rothnic/anaconda-notebook
     ```
 
 1. Jupyter Notebook jest dostępny pod adresem http://localhost:8888/
